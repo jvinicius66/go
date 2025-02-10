@@ -60,7 +60,7 @@ class HttpMinimal extends IHttp {
 
   HttpResponse _handleResponse(http.Response httpResponse) {
     if (httpResponse.statusCode >= 200 && httpResponse.statusCode < 300) {
-      final responseData = jsonDecode(httpResponse.body);
+      final responseData = jsonDecode(utf8.decode(httpResponse.bodyBytes));
       _logResponse(
         httpResponse.request?.method ?? '',
         httpResponse.request?.url.toString() ?? '',
