@@ -1,0 +1,38 @@
+name: dependencues
+description: Dependencies package
+publish_to: "none"
+
+version: 0.0.1
+
+environment:
+  sdk: ">=3.4.4 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  core:
+    path: ../../../../packages/core
+  locator_common:
+    path: ../../../../packages/locator/locator_common
+  locator_native:
+    path: ../../../../packages/locator/locator_native
+  log_common:
+    path: ../../../../packages/log/log_common
+  log_logger:
+    path: ../../../../packages/log/log_logger
+  http_common:
+    path: ../../../../packages/http/http_common
+  http_minimal:
+    path: ../../../../packages/http/http_minimal
+
+
+  cached_network_image: ^3.4.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  mocktail: ^1.0.4
+

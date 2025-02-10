@@ -12,8 +12,8 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.6
 
-  # dependencies:
-  #   path: features/dependencies
+  core:
+    path: ../../packages/core
 
 dev_dependencies:
   flutter_test:
