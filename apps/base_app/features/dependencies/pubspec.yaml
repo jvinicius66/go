@@ -27,7 +27,6 @@ dependencies:
   http_minimal:
     path: ../../../../packages/http/http_minimal
 
-
   cached_network_image: ^3.4.1
 
 dev_dependencies:
