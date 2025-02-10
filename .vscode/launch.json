@@ -1,0 +1,104 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "app - dev (debug)",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "debug",
+        "program": "apps/base_app/lib/main_dev.dart",
+        "args": [
+          "--flavor",
+          "dev"
+        ]
+      },
+      {
+        "name": "app - dev (profile)",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "profile",
+        "program": "apps/base_app/lib/main_dev.dart",
+        "args": [
+          "--flavor",
+          "dev"
+        ]
+      },
+      {
+        "name": "app - dev",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "release",
+        "program": "apps/base_app/lib/main_dev.dart",
+        "args": [
+          "--flavor",
+          "dev"
+        ]
+      },
+      {
+        "name": "app - hml (debug)",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "debug",
+        "program": "apps/base_app/lib/main_hml.dart",
+        "args": [
+          "--flavor",
+          "hml"
+        ]
+      },
+      {
+        "name": "app - hml (profile)",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "profile",
+        "program": "apps/base_app/lib/main_hml.dart",
+        "args": [
+          "--flavor",
+          "hml"
+        ]
+      },
+      {
+        "name": "app - hml",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "release",
+        "program": "apps/base_app/lib/main_hml.dart",
+        "args": [
+          "--flavor",
+          "hml"
+        ]
+      },
+      {
+        "name": "app - prod (debug)",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "debug",
+        "program": "apps/base_app/lib/main_prod.dart",
+        "args": [
+          "--flavor",
+          "prod"
+        ]
+      },
+      {
+        "name": "app - prod (profile)",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "profile",
+        "program": "apps/base_app/lib/main_prod.dart",
+        "args": [
+          "--flavor",
+          "prod"
+        ]
+      },
+      {
+        "name": "app - prod",
+        "request": "launch",
+        "type": "dart",
+        "flutterMode": "release",
+        "program": "apps/base_app/lib/main_prod.dart",
+        "args": [
+          "--flavor",
+          "prod"
+        ]
+      }
+    ]
+  }
