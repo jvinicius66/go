@@ -1,0 +1,27 @@
+name: http_minimal
+description: Http minimal package
+publish_to: "none"
+
+version: 0.0.1
+
+environment:
+  sdk: ">=3.4.4 <4.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  core:
+    path: ../../core
+  http_common:
+    path: ../http_common
+
+  path: ^1.9.0
+  http: ^1.3.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  mocktail: ^1.0.4
