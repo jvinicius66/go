@@ -32,7 +32,7 @@ class _AppWidgetState extends State<AppWidget> {
       onGenerateRoute: (settings) {
         return MaterialPageRoute(
           builder: (_) => switch (settings.name) {
-            '/' => const HomeView(),
+            '/' => HomeView(homeController: HomeBind.bind),
             _ => const Placeholder(),
           },
         );
