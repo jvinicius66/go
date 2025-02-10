@@ -16,7 +16,12 @@ class _AppWidgetState extends State<AppWidget> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      theme: ThemeData(useMaterial3: false),
+      theme: ThemeData(
+        useMaterial3: false,
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.red,
+        ),
+      ),
       builder: (_, child) => _flavorBanner(
         child: child!,
         show: !Flavor.isProd,
