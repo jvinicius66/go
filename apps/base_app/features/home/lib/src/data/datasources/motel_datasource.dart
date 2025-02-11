@@ -14,6 +14,8 @@ abstract class IMotelDatasource {
 /// Motel datasource implementation
 ///
 final class MotelDatasource extends IMotelDatasource {
+  final String _getListPath = 'b/1IXK';
+
   /// Creates [MotelDatasource]
   MotelDatasource(this._http);
 
@@ -22,7 +24,7 @@ final class MotelDatasource extends IMotelDatasource {
 
   @override
   Future<List<MotelModel>> get() async {
-    final result = await _http.get('b/1IXK');
+    final result = await _http.get(_getListPath);
 
     return MotelModel.fromMapList(result.data['data']['moteis']);
   }

@@ -12,9 +12,11 @@ import 'view.dart' show HomeController;
 /// Home bind to inject instances
 ///
 abstract class HomeBind {
+  static const _urlBase = 'https://www.jsonkeeper.com/';
+
   /// Method do invoke binding
   static HomeController get bind {
-    final IHttp http = HttpMinimal('https://www.jsonkeeper.com/');
+    final IHttp http = HttpMinimal(_urlBase);
     final IMotelDatasource datasource = MotelDatasource(http);
     final IMotelRepository repository = MotelRepository(datasource);
     final IGetMotelListUsecase getMotelListUsecase =
