@@ -1,3 +1,4 @@
+import 'package:dependencies/dependencies.dart';
 import 'package:flutter/material.dart';
 import 'package:home/home.dart';
 
@@ -22,9 +23,11 @@ class _AppWidgetState extends State<AppWidget> {
           primarySwatch: Colors.red,
         ),
       ),
-      builder: (_, child) => _flavorBanner(
-        child: child!,
-        show: !Flavor.isProd,
+      builder: (_, child) => _AppBuilder(
+        _flavorBanner(
+          child: child!,
+          show: !Flavor.isProd,
+        ),
       ),
       title: 'Go',
       debugShowCheckedModeBanner: false,
@@ -57,7 +60,22 @@ class _AppWidgetState extends State<AppWidget> {
               textDirection: TextDirection.ltr,
               child: child,
             )
-          : Container(
-              child: child,
+          : child;
+}
+
+class _AppBuilder extends LayoutBuilder {
+  _AppBuilder(Widget child)
+      : super(
+          builder: (_, constraints) {
+            return OrientationBuilder(
+              builder: (_, orientation) {
+                PropotionalSize(
+                  designScreenWidth: 360,
+                  designScreenHeight: 640,
+                ).init(constraints, orientation);
+                return child;
+              },
             );
+          },
+        );
 }
