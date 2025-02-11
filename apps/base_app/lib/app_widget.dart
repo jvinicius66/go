@@ -1,8 +1,7 @@
-import 'package:dependencies/dependencies.dart';
 import 'package:flutter/material.dart';
-import 'package:home/home.dart';
 
-import 'flavor.dart';
+import 'app_base.dart';
+import 'app_routes.dart';
 
 /// App Widget
 class AppWidget extends StatefulWidget {
@@ -27,14 +26,7 @@ class _AppWidgetState extends State<AppWidget> {
       title: 'Go',
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
-      onGenerateRoute: (settings) {
-        return MaterialPageRoute(
-          builder: (_) => switch (settings.name) {
-            '/' => HomeView(homeController: HomeBind.bind),
-            _ => const Placeholder(),
-          },
-        );
-      },
+      onGenerateRoute: AppRoute.onGenerateRoute,
     );
   }
 }
