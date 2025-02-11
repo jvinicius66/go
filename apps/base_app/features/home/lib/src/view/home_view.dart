@@ -1,10 +1,11 @@
 import 'package:dependencies/dependencies.dart'
-    show CachedNetworkImage, DoubleExt;
+    show CachedNetworkImage, DoubleExt, NumExt;
 import 'package:flutter/material.dart';
 
 import '../domain/entities/entities.dart' show Motel, Suite;
 import 'home_controller.dart';
 import 'home_state.dart';
+
 part 'home_widgets.dart';
 
 ///
