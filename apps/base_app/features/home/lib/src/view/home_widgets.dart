@@ -70,7 +70,7 @@ class _MotelTitle extends Builder {
 class _SuiteList extends SizedBox {
   _SuiteList({required List<Suite> suites})
       : super(
-          height: 250.height,
+          height: 255.height,
           child: ListView.builder(
             itemCount: suites.length,
             shrinkWrap: true,
